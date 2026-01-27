@@ -71,13 +71,13 @@ print("Root Mean Square Error = ",rmse)*/
 
 ## COMPARE DATA SET:
 <img width="926" height="585" alt="image" src="https://github.com/user-attachments/assets/e0cd565c-e1e4-446c-93e6-46404c88ecbe" />
-# PREDICTED VALUE:
+## PREDICTED VALUE:
 <img width="795" height="79" alt="image" src="https://github.com/user-attachments/assets/aeec171c-e0aa-4515-b401-f6c8f1321166" />
-# GRAPH(TRAINING SET):
+## GRAPH(TRAINING SET):
 <img width="953" height="656" alt="image" src="https://github.com/user-attachments/assets/5f3580ef-d590-4282-900d-f5ac921ac65c" />
-# GRAPH(TESTING SET):
+## GRAPH(TESTING SET):
 <img width="939" height="671" alt="image" src="https://github.com/user-attachments/assets/bf4a90f2-260c-489e-aa66-eb63ac9984b8" />
-# ERRORS:
+## ERRORS:
 <img width="558" height="91" alt="image" src="https://github.com/user-attachments/assets/5d743071-d9f0-40f2-8852-074085698cbf" />
 
 
