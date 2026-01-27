@@ -62,14 +62,14 @@ print('Mean Square Error = ',mse)
 mae=mean_absolute_error(y_test,y_pred)
 print('Mean Absolute Error = ',mae)
 rmse=np.sqrt(mse)
-print("Root Mean Square Error = ",rmse)
-*/
+print("Root Mean Square Error = ",rmse)*/
 ```
 
 ## Output:
 # READ HEAD AND TAIL FILES:
 <img width="403" height="523" alt="image" src="https://github.com/user-attachments/assets/01a96d66-7ff6-4e80-a897-ca2d0b34b15d" />
-# COMPARE DATA SET:
+
+## COMPARE DATA SET:
 <img width="926" height="585" alt="image" src="https://github.com/user-attachments/assets/e0cd565c-e1e4-446c-93e6-46404c88ecbe" />
 # PREDICTED VALUE:
 <img width="795" height="79" alt="image" src="https://github.com/user-attachments/assets/aeec171c-e0aa-4515-b401-f6c8f1321166" />
