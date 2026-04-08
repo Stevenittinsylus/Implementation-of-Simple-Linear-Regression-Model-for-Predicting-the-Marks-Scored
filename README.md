@@ -64,7 +64,62 @@ print('Mean Square Error = ',mse)
 mae=mean_absolute_error(y_test,y_pred)
 print('Mean Absolute Error = ',mae)
 rmse=np.sqrt(mse)
-print("Root Mean Square Error = ",rmse)*/
+print("Root Mean Square Error = ",rmse)
+```
+```
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import mean_absolute_error, mean_squared_error
+
+# Load dataset
+dataset = pd.read_csv("student_scores.csv")
+
+# Define features and target
+X = dataset.iloc[:, :-1].values
+y = dataset.iloc[:, 1].values
+
+# Split dataset
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.33, random_state=0
+)
+
+# Train model
+model = LinearRegression()
+model.fit(X_train, y_train)
+
+# Predictions
+y_pred = model.predict(X_test)
+
+# Visualization (Training set)
+plt.scatter(X_train, y_train)
+plt.plot(X_train, model.predict(X_train))
+plt.title("Hours vs Scores (Training set)")
+plt.xlabel("Hours")
+plt.ylabel("Scores")
+plt.show()
+
+# Visualization (Testing set)
+plt.scatter(X_test, y_test)
+plt.plot(X_train, model.predict(X_train))
+plt.title("Hours vs Scores (Testing set)")
+plt.xlabel("Hours")
+plt.ylabel("Scores")
+plt.show()
+
+# Evaluation
+mse = mean_squared_error(y_test, y_pred)
+mae = mean_absolute_error(y_test, y_pred)
+rmse = np.sqrt(mse)
+
+print("Mean Squared Error =", mse)
+print("Mean Absolute Error =", mae)
+print("Root Mean Squared Error =", rmse)
+
+
+
 ```
 
 ## Output:
